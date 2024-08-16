@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+  --cor1: rgb(9,11,26);
+  --cor2: rgb(27,25,56);
+  --cor3: rgb(170,92,219);
+  --cor4: rgba(255, 255, 255, 0.75);
+  --cor5: rgba(255, 255, 255, 0.6);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'inter';
+  font-size: 1.5rem;
+}
