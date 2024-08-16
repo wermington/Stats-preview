@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
 
 :root {
-  --cor1: rgb(9,11,26);
-  --cor2: rgb(27,25,56);
-  --cor3: rgb(170,92,219);
+  --cor1: rgb(9, 11, 26);
+  --cor2: rgb(27, 25, 56);
+  --cor3: rgb(170, 92, 219);
   --cor4: rgba(255, 255, 255, 0.75);
   --cor5: rgba(255, 255, 255, 0.6);
 }
@@ -20,6 +20,121 @@ html {
 }
 
 body {
-  font-family: 'inter';
+  font-family: "inter";
   font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.container {
+  height: 100vh;
+  background-color: var(--cor1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .geral {
+    height: 34.5rem;
+
+    max-width: 78rem;
+    background-color: var(--cor2);
+    display: flex;
+    gap: 0.45%;
+    pad: 0 2rem;
+    margin: 0 auto;
+
+    & .infor {
+      display: flex;
+      flex-flow: column;
+      max-width: 30rem;
+      gap: 6rem;
+      margin: 3.75%;
+      /* margin: 6rem 10rem 4rem 10rem; */
+      padding: 1rem;
+
+      & .titulo {
+        display: flex;
+        flex-flow: column;
+        gap: 2.3rem;
+
+        & h1 {
+          font-size: 2.7rem;
+          & spam {
+            color: var(--cor3);
+          }
+        }
+
+        & p {
+          color: var(--cor5);
+          line-height: 1.4;
+        }
+      }
+      & .contador {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: 0.5rem;
+        width: 100%;
+        margin: 0 auto;
+        padding-right: 3rem;
+        justify-content: space-between;
+        grid-template-areas:
+          "p1 p3 p5"
+          "p2 p4 p6";
+
+        & .p1 {
+          grid-area: p1;
+          font-weight: 700;
+        }
+        & .p2 {
+          grid-area: p2;
+          color: var(--cor5);
+          text-transform: uppercase;
+          font-size: 1rem;
+          font-family: "Lexend+Deca";
+        }
+        & .p3 {
+          grid-area: p3;
+          font-weight: 700;
+        }
+        & .p4 {
+          grid-area: p4;
+          color: var(--cor5);
+          text-transform: uppercase;
+          font-family: "Lexend+Deca";
+          font-size: 1rem;
+        }
+        & .p5 {
+          grid-area: p5;
+          font-weight: 700;
+        }
+        & .p6 {
+          grid-area: p6;
+          color: var(--cor5);
+          text-transform: uppercase;
+          font-family: "Lexend+Deca";
+          font-size: 1rem;
+        }
+      }
+    }
+    & .roxo {
+      position: relative;
+      height: 34.5rem;
+
+      & img {
+        max-width: 100%;
+        min-width: 41.5rem;
+        max-height: auto;
+        background-color: var(--cor3);
+      }
+      & .filtro {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(170, 92, 219, 0.63);
+      }
+    }
+  }
 }
