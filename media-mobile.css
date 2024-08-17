@@ -1,0 +1,6 @@
+@media (min-width: 415px) and (max-width: 768px) {
+  /* Estilos específicos para celulares grandes */
+  body{
+    background-color: saddlebrown;
+  }
+}
