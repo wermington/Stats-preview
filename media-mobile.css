@@ -1,6 +1,38 @@
 @media (min-width: 415px) and (max-width: 768px) {
   /* Estilos específicos para celulares grandes */
-  body{
-    background-color: saddlebrown;
+
+  .container {
+    height: 100%;
+    & .geral {
+      display: flex;
+      flex-flow: column;
+      height: 100vh;
+      margin: 10rem 0;
+      border-radius: 2rem;
+      & .infor {
+        order: 2;
+        & .titulo {
+          display: flex;
+          flex-flow: column;
+          text-align: center;
+        }
+        & .contador {
+          flex-flow: column;
+        }
+      }
+
+      & .roxo {
+        width: 41.5rem;
+
+        & img {
+          border-top-left-radius: 2rem;
+          border-top-right-radius: 2rem;
+        }
+        & .filtro {
+          border-top-left-radius: 2rem;
+          border-top-right-radius: 2rem;
+        }
+      }
+    }
   }
 }
