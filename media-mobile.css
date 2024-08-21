@@ -3,25 +3,34 @@
 
   .container {
     height: 100%;
+    width: 100%;
+
     & .geral {
       display: flex;
       flex-flow: column;
       height: 100vh;
       margin: 10rem 0;
-      border-radius: 2rem;
+      border-radius: 1rem;
       align-items: center;
       & .infor {
+        text-align: center;
+
         order: 2;
-        /* justify-content: stretch; */
-        /* align-items: center; */
+
         & .titulo {
           display: flex;
           flex-flow: column;
-          /* text-align: center; */
-          /* text-align: justify; */
         }
         & .contador {
+          display: flex;
           flex-flow: column;
+          gap: 5rem;
+
+          & div {
+            display: flex;
+            flex-flow: column;
+            gap: 1rem;
+          }
         }
       }
 
@@ -29,12 +38,12 @@
         width: 41.5rem;
 
         & img {
-          border-top-left-radius: 2rem;
-          border-top-right-radius: 2rem;
+          border-top-left-radius: 1rem;
+          border-top-right-radius: 1rem;
         }
         & .filtro {
-          border-top-left-radius: 2rem;
-          border-top-right-radius: 2rem;
+          border-top-left-radius: 1rem;
+          border-top-right-radius: 1rem;
         }
       }
     }
