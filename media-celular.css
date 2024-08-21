@@ -40,9 +40,11 @@
       & .roxo {
         position: relative;
         width: 30rem;
+        height: auto;
         overflow: hidden;
 
         & img {
+          display: block;
           border-top-left-radius: 1rem;
           border-top-right-radius: 1rem;
         }
