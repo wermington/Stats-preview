@@ -1,0 +1,57 @@
+@media all and (max-width: 420px) {
+  /* Estilos específicos para celulares grandes */
+
+  .container {
+    height: auto;
+    width: auto;
+
+    & .geral {
+      width: 30rem;
+      display: flex;
+      flex-flow: column;
+      height: auto;
+      margin: 4rem 0;
+      border-radius: 1rem;
+      align-items: center;
+      & .infor {
+        text-align: center;
+        order: 2;
+        gap: 3.5rem;
+
+        & .titulo {
+          display: flex;
+          flex-flow: column;
+          gap: 3rem;
+        }
+        & .contador {
+          display: flex;
+          flex-flow: column;
+          gap: 4rem;
+          
+
+          & div {
+            display: flex;
+            flex-flow: column;
+            gap: 1rem;
+          }
+        }
+      }
+
+      & .roxo {
+        position: relative;
+        width: 30rem;
+        overflow: hidden;
+
+        & img {
+          border-top-left-radius: 1rem;
+          border-top-right-radius: 1rem;
+        }
+        & .filtro {
+          width: 100%;
+          border-top-left-radius: 1rem;
+          border-top-right-radius: 1rem;
+        }
+      }
+    }
+  }
+}
